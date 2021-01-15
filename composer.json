@@ -78,7 +78,7 @@
         }
     },
     "require": {
-        "entreprise7pro/dxbase": "3.0.0-alpha1",
+        "entreprise7pro/dxbase": "3.0.0-alpha2",
         "drupal/linkit": "6.0-beta2 as 5.0-beta11"
     },
     "authors": [
