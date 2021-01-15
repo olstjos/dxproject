@@ -1,0 +1,90 @@
+{
+    "name": "agrcms/internet",
+    "description": "WxT based internet sub project",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://drupalwxt.github.io/composer-extdeps/"
+        }
+    ],
+    "scripts": {
+        "pre-install-cmd": [
+            "if [ -d html/sites/default ]; then chmod 775 html/sites/default; fi"
+        ],
+        "post-install-cmd": [
+            "bash post_install.sh"
+        ],
+        "post-update-cmd": [
+            "bash post_install.sh"
+        ],
+        "quick-start": [
+            "composer install"
+        ]
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        },
+        "installer-types": [
+          "bower-asset",
+          "npm-asset",
+          "custom-module",
+          "custom-theme"
+        ],
+        "installer-paths": {
+            "html/core": [
+                "type:drupal-core"
+            ],
+            "html/libraries/{$name}" : [
+                "type:drupal-console-library",
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "html/modules/custom/{$name}": [
+                "drupal/wxt_library",
+                "type:drupal-custom-module"
+            ],
+            "html/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "html/profiles/{$name}": [
+                "type:drupal-profile"
+            ],
+            "html/themes/custom/{$name}": [
+                "drupal/wxt_bootstrap",
+                "type:drupal-custom-theme"
+            ],
+            "html/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    },
+    "require": {
+        "entreprise7pro/dxbase": "3.0.0-alpha1",
+        "drupal/linkit": "6.0-beta2 as 5.0-beta11"
+    },
+    "authors": [
+        {
+            "name": "olstjos",
+            "email": "j@7pro.ca"
+        }
+    ]
+}
