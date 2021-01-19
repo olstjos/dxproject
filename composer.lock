@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c37ce8b251802ba2e12770e4caf9a312",
+    "content-hash": "e5a000ba30ac7e1e6f6a2232b89d0acc",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -13925,16 +13925,16 @@
         },
         {
             "name": "entreprise7pro/dxbase",
-            "version": "3.0.0-alpha5",
+            "version": "3.0.0-alpha6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/entreprise7pro/dxbase.git",
-                "reference": "08e49efddff51eb202cc16527ebbcd502def3771"
+                "reference": "d46b60c6e2080d43f1e7f655847ab0489f72f401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/entreprise7pro/dxbase/zipball/08e49efddff51eb202cc16527ebbcd502def3771",
-                "reference": "08e49efddff51eb202cc16527ebbcd502def3771",
+                "url": "https://api.github.com/repos/entreprise7pro/dxbase/zipball/d46b60c6e2080d43f1e7f655847ab0489f72f401",
+                "reference": "d46b60c6e2080d43f1e7f655847ab0489f72f401",
                 "shasum": ""
             },
             "require": {
@@ -13977,7 +13977,7 @@
                 "drupal/moderated_content_bulk_publish": "^2.0",
                 "drupal/purge": "^3.0@beta",
                 "drupal/recreate_block_content": "2.x-dev",
-                "drupal/safedelete": "^1.0.17",
+                "drupal/safedelete": "^1.0.18",
                 "drupal/scanner": "1.x-dev",
                 "drupal/sharedemail": "^2.1",
                 "drupal/smtp": "1.x-dev",
@@ -14130,8 +14130,9 @@
                         "Save to predictable folder": "https://www.drupal.org/files/issues/2021-01-08/1875456-82.patch"
                     },
                     "drupal/wxt_bootstrap": {
-                        "WCAG - remove unnecessary roles banner/navigation/main/article/contentinfo": "https://www.drupal.org/files/issues/2020-12-17/wxt_bootstrap-w3c_warnings_unnecessary_roles-3154001-11.patch",
-                        "WCAG - Add roles to all menu UL LI and AHREF / LINK 3164631": "https://www.drupal.org/files/issues/2020-10-16/wcag-add-roles-to-all-menu-ul-li-ahref-link-3164631-17.patch"
+                        "W3C - make image twig output empty ALT attribute when no ALT text is provided": "https://www.drupal.org/files/issues/2021-01-19/D9-W3C-make-image-twig-output-empty-ALT-attribute-when-no-ALT-text-is-provided-3193622-5.patch",
+                        "WCAG - Add roles to all menu UL LI and AHREF / LINK 3164631": "https://www.drupal.org/files/issues/2020-10-16/wcag-add-roles-to-all-menu-ul-li-ahref-link-3164631-17.patch",
+                        "WCAG - unnecessary roles.": "https://www.drupal.org/files/issues/2020-12-17/wxt_bootstrap-w3c_warnings_unnecessary_roles-3154001-11.patch"
                     }
                 },
                 "patches-ignore": {
@@ -14156,9 +14157,9 @@
             "description": "WxT optimal base for Drupal 8/9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/entreprise7pro/dxbase/issues",
-                "source": "https://github.com/entreprise7pro/dxbase/tree/3.0.0-alpha5"
+                "source": "https://github.com/entreprise7pro/dxbase/tree/3.0.0-alpha6"
             },
-            "time": "2021-01-19T03:47:19+00:00"
+            "time": "2021-01-19T22:19:10+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
