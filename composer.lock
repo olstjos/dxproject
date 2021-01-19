@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2723430f5b2f289b97ded4e8971b72da",
+    "content-hash": "c37ce8b251802ba2e12770e4caf9a312",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -386,7 +386,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -11076,17 +11076,17 @@
         },
         {
             "name": "drupal/safedelete",
-            "version": "1.0.16",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/safedelete.git",
-                "reference": "1.0.16"
+                "reference": "1.0.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/safedelete-1.0.16.zip",
-                "reference": "1.0.16",
-                "shasum": "7cceb01b28ede61cbfa611f546a05d3bf9fac6b5"
+                "url": "https://ftp.drupal.org/files/projects/safedelete-1.0.18.zip",
+                "reference": "1.0.18",
+                "shasum": "46d456b67a6fb5f14b827f2936a5a5ece5948d89"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -11095,8 +11095,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.16",
-                    "datestamp": "1610136145",
+                    "version": "1.0.18",
+                    "datestamp": "1611075788",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11108,6 +11108,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "jamesYao",
+                    "homepage": "https://www.drupal.org/user/3644558"
+                },
                 {
                     "name": "joseph.olstad",
                     "homepage": "https://www.drupal.org/user/1321830"
@@ -13921,16 +13925,16 @@
         },
         {
             "name": "entreprise7pro/dxbase",
-            "version": "3.0.0-alpha4",
+            "version": "3.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/entreprise7pro/dxbase.git",
-                "reference": "90cd59a01d00002d6b681f6e53c429bc0a9f9020"
+                "reference": "08e49efddff51eb202cc16527ebbcd502def3771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/entreprise7pro/dxbase/zipball/90cd59a01d00002d6b681f6e53c429bc0a9f9020",
-                "reference": "90cd59a01d00002d6b681f6e53c429bc0a9f9020",
+                "url": "https://api.github.com/repos/entreprise7pro/dxbase/zipball/08e49efddff51eb202cc16527ebbcd502def3771",
+                "reference": "08e49efddff51eb202cc16527ebbcd502def3771",
                 "shasum": ""
             },
             "require": {
@@ -13973,7 +13977,7 @@
                 "drupal/moderated_content_bulk_publish": "^2.0",
                 "drupal/purge": "^3.0@beta",
                 "drupal/recreate_block_content": "2.x-dev",
-                "drupal/safedelete": "^1.0.15",
+                "drupal/safedelete": "^1.0.17",
                 "drupal/scanner": "1.x-dev",
                 "drupal/sharedemail": "^2.1",
                 "drupal/smtp": "1.x-dev",
@@ -14152,9 +14156,9 @@
             "description": "WxT optimal base for Drupal 8/9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/entreprise7pro/dxbase/issues",
-                "source": "https://github.com/entreprise7pro/dxbase/tree/3.0.0-alpha4"
+                "source": "https://github.com/entreprise7pro/dxbase/tree/3.0.0-alpha5"
             },
-            "time": "2021-01-18T02:04:58+00:00"
+            "time": "2021-01-19T03:47:19+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -15538,16 +15542,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.11",
+            "version": "1.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d"
+                "reference": "19bb8e95490d3e3ad92fcac95500ca80bdcc7495"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/17d355cb7d3c4ff08e5729f29cd7660145208d9d",
-                "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/19bb8e95490d3e3ad92fcac95500ca80bdcc7495",
+                "reference": "19bb8e95490d3e3ad92fcac95500ca80bdcc7495",
                 "shasum": ""
             },
             "require": {
@@ -15604,7 +15608,17 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Archive_Tar",
                 "source": "https://github.com/pear/Archive_Tar"
             },
-            "time": "2020-11-19T22:10:24+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-01-18T19:32:54+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -16277,16 +16291,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.5",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956"
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/7c710551d4a2653afa259c544508dc18a9098956",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6f990c19f91729de8b31e639d6e204ea59f19cf3",
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3",
                 "shasum": ""
             },
             "require": {
@@ -16315,7 +16329,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-main": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -16347,9 +16361,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.5"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.6"
             },
-            "time": "2020-12-04T02:51:30+00:00"
+            "time": "2021-01-18T15:53:43+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
