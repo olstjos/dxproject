@@ -249,61 +249,12 @@ else
 fi
 
 if [ ! -L html/modules/contrib/wxt_ext_translation ]; then
-  echo `pwd`
-  pushd html/modules/contrib/
-  ln -s ../../../custom/archives/wxt_ext_translation wxt_ext_translation
-  popd
-  echo `pwd`
+  echo "For Drupal 9, will need need to look at restoring wxt_ext_translation if it's an upgraded site."
+  #echo `pwd`
+  #pushd html/modules/contrib/
+  #ln -s ../../../custom/archives/wxt_ext_translation wxt_ext_translation
+  #popd
+  #echo `pwd`
 fi
 
-#if [ -d "html/modules/contrib/libraries" ]; then
-#  rm html/modules/contrib/libraries -rf
-#  rm html/modules/contrib/libraries*.gz
-#fi
-#pushd html/modules/contrib/
-#wget https://ftp.drupal.org/files/projects/libraries-8.x-3.x-dev.tar.gz
-#tar -pxzf libraries-8.x-3.x-dev.tar.gz
-#popd
-#pushd html/modules/contrib/libraries
-#sed -i "s+^core: '8.x'.*$++g" libraries.info.yml
-#sed -i "s+^# core: 8.x.*$+core_version_requirement: ^8 || ^9+g" libraries.info.yml
-#wget https://www.drupal.org/files/issues/2020-05-26/3119010-14_0.patch
-#patch -p1 < 3119010-14_0.patch
-#sleep 1
-#popd
-#if [ -d "html/modules/contrib/linkchecker" ]; then
-#  rm html/modules/contrib/linkchecke* -rf
-#fi
-#pushd html/modules/contrib/
-#wget https://ftp.drupal.org/files/projects/linkchecker-8.x-1.x-dev.tar.gz
-#tar -pxzf linkchecker-8.x-1.x-dev.tar.gz
-#popd
-#pushd html/modules/contrib/linkchecker
-#wget https://www.drupal.org/files/issues/2020-05-18/3136822-24.patch
-#patch -p1 < 3136822-24.patch
-#sleep 1
-#wget https://www.drupal.org/files/issues/2020-06-08/3132326-9.patch
-#patch -p1 < 3132326-9.patch
-#sleep 2
-#wget https://www.drupal.org/files/issues/2020-08-31/3118940_0.patch
-#patch -p1 < 3118940_0.patch
-#sleep 2
-#wget https://www.drupal.org/files/issues/2020-06-17/3058014-27.patch
-#patch -p1 < 3058014-27.patch >out 2>&1
-#cat out
-#rm linkchecker.info.yml.rej
-#sleep 1
-#popd
-#if [ -d "html/modules/contrib/git_status" ]; then
-#  rm html/modules/contrib/git_status* -rf
-#fi
-#pushd html/modules/contrib/
-#wget https://ftp.drupal.org/files/projects/git_status-8.x-1.0-alpha5.tar.gz
-#tar -pxzf git_status-8.x-1.0-alpha5.tar.gz
-#popd
-#pushd html/modules/contrib/git_status
-#wget https://www.drupal.org/files/issues/2020-04-20/git_status-drupal_9_readiness-3129221-2.patch
-#patch -p1 < git_status-drupal_9_readiness-3129221-2.patch
-#sleep 1
-#popd
 
