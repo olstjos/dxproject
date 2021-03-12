@@ -156,48 +156,48 @@ if [ ! -d "html/libraries/jquery-ui-touch-punch" ]; then
         mv jquery.ui.touch-punch.min.js html/libraries/jquery-ui-touch-punch;
 fi
 
-if [ -f html/splash.php ] && [ ! -L html/splash.php ]; then
-  echo "rm html/splash.php"
-        rm html/splash.php
-fi
-if [ ! -L html/splash.php ]; then
-  echo "chmod 775 html"
-        chmod 775 html
-  echo "cd html"
-        cd html
-  echo "ln -s ../custom/splash/splash.php splash.php"
-        ln -s ../custom/splash/splash.php splash.php
-  echo "cd ..;"
-        cd ..;
-fi
-if [ ! -L html/splash-fancy.php ]; then
-  echo "cd html"
-        cd html
-  echo "ln -s ../custom/splash/splash-fancy.php splash-fancy.php"
-        ln -s ../custom/splash/splash-fancy.php splash-fancy.php
-  echo "cd .."
-        cd ..
-fi
-if [ ! -L html/sites/default/splash ]; then
-  echo "chmod 775 html/sites/default"
-        chmod 775 html/sites/default
-  echo "pushd html/sites/default;"
-        pushd html/sites/default;
-  echo "ln -s ../../../custom/splash/sites/default/splash splash"
-        ln -s ../../../custom/splash/sites/default/splash splash
-  echo "popd;"
-        popd;
-fi
-if [ ! -L html/sites/default/splash-fancy ]; then
-  pushd html/sites/default;
-  ln -s ../../../custom/splash/sites/default/splash-fancy splash-fancy
-  popd;
-fi
-if [ ! -L html/sites/default/files/splashimages ]; then
-  pushd html/sites/default/files;
-  ln -s ../../../../custom/splash/sites/default/files/splashimages splashimages
-  popd;
-fi
+#if [ -f html/splash.php ] && [ ! -L html/splash.php ]; then
+#  echo "rm html/splash.php"
+#        rm html/splash.php
+#fi
+#if [ ! -L html/splash.php ]; then
+#  echo "chmod 775 html"
+#        chmod 775 html
+#  echo "cd html"
+#        cd html
+#  echo "ln -s ../custom/splash/splash.php splash.php"
+#        ln -s ../custom/splash/splash.php splash.php
+#  echo "cd ..;"
+#        cd ..;
+#fi
+#if [ ! -L html/splash-fancy.php ]; then
+#  echo "cd html"
+#        cd html
+#  echo "ln -s ../custom/splash/splash-fancy.php splash-fancy.php"
+#        ln -s ../custom/splash/splash-fancy.php splash-fancy.php
+#  echo "cd .."
+#        cd ..
+#fi
+#if [ ! -L html/sites/default/splash ]; then
+#  echo "chmod 775 html/sites/default"
+#        chmod 775 html/sites/default
+#  echo "pushd html/sites/default;"
+#        pushd html/sites/default;
+#  echo "ln -s ../../../custom/splash/sites/default/splash splash"
+#        ln -s ../../../custom/splash/sites/default/splash splash
+#  echo "popd;"
+#        popd;
+#fi
+#if [ ! -L html/sites/default/splash-fancy ]; then
+#  pushd html/sites/default;
+#  ln -s ../../../custom/splash/sites/default/splash-fancy splash-fancy
+#  popd;
+#fi
+#if [ ! -L html/sites/default/files/splashimages ]; then
+#  pushd html/sites/default/files;
+#  ln -s ../../../../custom/splash/sites/default/files/splashimages splashimages
+#  popd;
+#fi
 
 if [ $live -eq 1 ]; then
   echo "Do not use minified css";
